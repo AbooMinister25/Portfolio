@@ -12,9 +12,9 @@ export default function Layout({
     pageDescription,
 }: Props) {
     return (
-        <div>
+        <main>
             <Meta pageTitle={pageTitle} pageDescription={pageDescription} />
             <div>{children}</div>
-        </div>
+        </main>
     );
 }
