@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Header() {
     return (
         <div className="h-screen flex flex-col">
-            <h1 className="text-7xl font-medium text-oneblue text-center md:text-left mb-10 mt-36 lg:ml-72 justify-center">
+            <h1 className="text-7xl font-medium text-oneblue text-center lg:text-left mb-10 mt-36 lg:ml-72 justify-center">
                 {" "}
                 <Typewriter
                     onInit={(typewriter) => {
@@ -17,19 +17,23 @@ export default function Header() {
                     }}
                 />
             </h1>
-            <p className="text-3xl dark:text-onegrey my-10 md:ml-72 text-center md:text-left">
-                I'm 14 years old, and I program
-                <br />
-                in <span className="text-pyyel">Python</span>,
-                <span className="text-rustorange dark:text-onered"> Rust</span>,
+            <p className="text-3xl dark:text-onegrey my-10 lg:ml-72 text-center lg:text-left">
+                I'm a 14 year old programming enthusiast that <br />
+                that engages in{" "}
+                <span className="text-onered">web development </span>
                 and
-                <span className="text-tsblue dark:text-onemagenta">
-                    {" "}
-                    TypeScript
-                </span>
-                .
+                <span className="text-onered"> language design</span>
+                {/*<br />*/}
+                {/*in <span className="text-pyyel">Python</span>,*/}
+                {/*<span className="text-rustorange dark:text-onered"> Rust</span>,*/}
+                {/*and*/}
+                {/*<span className="text-tsblue dark:text-onemagenta">*/}
+                {/*    {" "}*/}
+                {/*    TypeScript*/}
+                {/*</span>*/}
+                {/*.*/}
             </p>
-            <div className="flex flex-row justify-center md:justify-start my-10 md:ml-72">
+            <div className="flex flex-row justify-center md:justify-start my-5 md:ml-72">
                 <Link href="https://github.com/AbooMinister25">
                     <a target="blank">
                         <svg

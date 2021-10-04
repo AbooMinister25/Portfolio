@@ -2,6 +2,7 @@ import Layout from "../components/layout";
 import NavMenu from "../components/navbar";
 import About from "../components/about";
 import Header from "../components/header";
+import Tools from "../components/tools";
 
 const meta = {
     title: "Portfolio",
@@ -15,6 +16,7 @@ export default function Home() {
             <NavMenu />
             <Header />
             <About />
+            <Tools />
         </Layout>
     );
 }
