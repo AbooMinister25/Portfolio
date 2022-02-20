@@ -1,0 +1,86 @@
+.about
+    margin: 0 1rem 5rem 1rem
+    display: flex
+    flex-direction: column
+
+    @media screen and (min-width: 440px)
+        mragin-bottom: 0
+        height: 80vh
+
+    @media (min-width: 1024px)
+        margin-left: 15%
+
+.about-header
+    font-size: 2.25rem
+    line-height: 0
+    color: $grey7
+    min-width: 50%
+    position: relative;
+
+    @media screen and (min-width: 768px)
+        overflow: hidden
+
+.about-header:after
+    display: none
+    content: ''
+    position: absolute
+    top: 50%
+    border-bottom: 2px solid
+    min-width: 50%
+    margin-left: 13rem
+
+    @media screen and (min-width: 768px)
+        display:block
+
+.about-content
+    display: flex
+    flex-direction: column
+
+    @media (min-width: 1024px)
+        flex-direction: row
+
+.about-bio
+    color: $grey5
+    font-size: 1rem
+    line-height: 1.5rem
+
+    @media (min-width: 768px)
+        font-size: 1.125rem
+        line-height: 1.75rem
+        width: 100%
+
+    @media (min-width: 1024px)
+        width: 42%
+
+.tools-list
+    font-size: 1.125rem
+    line-height: 1.75rem
+    color: $grey5
+
+    @media (min-width: 1024px)
+        margin-left: 2rem
+
+.tools-header
+    color: $grey5
+
+    @media(min-width: 1024px)
+        color: $grey7
+
+.tools-list ul
+    columns: 2
+    list-style: none
+    -webkit-columns: 2
+    -moz-columns: 2
+
+.tools-list li
+    font-family: $monospace
+    font-size: 1rem
+    margin-bottom: 0.5rem
+
+.tools-list li:before
+    color: $red
+    content: "▸"
+    margin: 0 5px 0 -15px
+
+.tools-list li:hover
+    color: $red

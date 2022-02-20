@@ -1,0 +1,47 @@
+.projects
+    align-items: center
+    display: flex
+    flex-direction: column
+    overflow: hidden
+
+    @media screen and (min-width: 440px)
+        height: 80vh
+
+.projects-header
+    text-align: center
+    font-size: 2.25rem
+    line-height: 0
+    color: $grey7
+
+.projects-list
+    display: grid
+    margin: 2rem 1rem 0 1rem
+
+    @media screen and (min-width: 768px)
+        gap: 1rem
+        grid-template-columns: 2fr 2fr
+
+.projects-list a
+    text-decoration: none
+
+.project-card
+    display: flex
+    flex-basis: 50%
+    margin-bottom: 2rem
+    background-color: $grey2
+    border-radius: 10px
+    padding: 1rem
+
+.project-card:hover .card-header
+    color: $blue
+
+.card-header
+    font-size: 1.5rem
+    line-height: 0
+    color: $grey7
+
+.card-description
+    color: $grey5
+
+.card-language
+    color: $blue
